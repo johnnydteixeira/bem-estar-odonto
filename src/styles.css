@@ -137,6 +137,15 @@
 .review-score .stars svg { width: 19px; }
 .review-score p { font-size: 12px; margin-top: 8px; color: var(--muted-foreground); }
 .reviews-inner h2 { font-size: 25px; font-weight: 700; margin-bottom: 10px; }
+.patient-review-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 22px; margin-top: 35px; }
+.patient-review { display: flex; flex-direction: column; min-width: 0; background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 25px; }
+.patient-review blockquote { font-size: 13px; line-height: 1.85; color: var(--muted-foreground); margin: 18px 0 24px; flex: 1; white-space: pre-line; }
+.review-author { display: grid; grid-template-columns: auto minmax(0,1fr); align-items: center; gap: 11px; }
+.review-avatar { background: var(--accent); color: var(--primary); width: 36px; height: 36px; border-radius: 50%; display: grid; place-items: center; font-size: 11px; font-weight: 700; }
+.review-author strong { display: block; font-size: 12px; font-weight: 650; }
+.review-author div > span { display: block; font-size: 9px; color: var(--muted-foreground); margin-top: 4px; }
+.patient-review a { font-size: 11px; margin-top: 12px; }
+@media (max-width: 767px) { .patient-review-grid { grid-template-columns: 1fr; gap: 18px; } }
 .unit-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; }
 .unit-card { border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
 .unit-heading { display: flex; align-items: center; gap: 13px; background: var(--secondary); padding: 23px 27px; }

@@ -33,3 +33,4 @@ use the editor.
 - Keep clinic contact data and WhatsApp/maps URL construction in a shared browser-safe module, with contact-rule tests to prevent unit mix-ups.
 - Appointment CTAs open a unit chooser before linking to WhatsApp; direct unit CTAs use that unit's number.
 - Use the global CSS semantic theme and shared Button variants for presentation; uploaded media is referenced through asset pointers.
+- Keep patient quotes in a focused review component with original source links and unit attribution so testimonials remain traceable.
