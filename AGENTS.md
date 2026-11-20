@@ -28,3 +28,8 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Application conventions
+- Keep clinic contact data and WhatsApp/maps URL construction in a shared browser-safe module, with contact-rule tests to prevent unit mix-ups.
+- Appointment CTAs open a unit chooser before linking to WhatsApp; direct unit CTAs use that unit's number.
+- Use the global CSS semantic theme and shared Button variants for presentation; uploaded media is referenced through asset pointers.
