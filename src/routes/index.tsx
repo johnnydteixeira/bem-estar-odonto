@@ -13,6 +13,7 @@ import sorriso from "@/assets/sorriso.webp.asset.json";
 import reabilitacao from "@/assets/reabilitacao.webp.asset.json";
 import clareamento from "@/assets/clareamento.webp.asset.json";
 import estetica from "@/assets/estetica.webp.asset.json";
+import facetas from "@/assets/facetas.webp.asset.json";
 
 const instagram = "https://www.instagram.com/clinicaodontobemestar/";
 const treatments = [
@@ -20,7 +21,7 @@ const treatments = [
   { name: "Restaurações e reabilitação oral", description: "Soluções para cuidar dos seus dentes e restabelecer a saúde bucal.", image: reabilitacao.url, icon: ShieldCheck },
   { name: "Aparelhos ortodônticos", description: "Acompanhamento para o alinhamento dos dentes e o equilíbrio do sorriso.", icon: Smile },
   { name: "Clareamento dental", description: "Uma avaliação individualizada para cuidar da estética do seu sorriso.", image: clareamento.url, icon: Sparkles },
-  { name: "Facetas e lentes em resina", description: "Atenção aos detalhes, à forma e à harmonia dos seus dentes.", icon: Smile },
+  { name: "Facetas e lentes em resina", description: "Atenção aos detalhes, à forma e à harmonia dos seus dentes.", image: facetas.url, icon: Smile },
   { name: "Botox e procedimentos estéticos", description: "Cuidado estético com atenção às suas necessidades e características.", image: estetica.url, icon: Sparkles },
   { name: "Prevenção e limpeza dental", description: "A saúde do seu sorriso começa com cuidados e acompanhamento regular.", icon: ShieldCheck },
   { name: "Odontopediatria", description: "Um atendimento acolhedor e cuidadoso para o sorriso dos pequenos.", icon: Baby },
