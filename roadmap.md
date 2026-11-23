@@ -6,3 +6,5 @@
 - [x] Deixar todos os botões de agendamento em verde e com a marca do WhatsApp.
 - [x] Colocar a marca do WhatsApp também nos botões que faltavam (clínica, tratamentos, cartões, Dra. Vanessa, menu do celular e janela de escolha).
 - [x] Usar a nova foto em Facetas e mostrar as imagens dos tratamentos sem cortes em todas as telas.
+- [x] Auditar todas as imagens, padronizar os arquivos locais e atualizar as importações.
+- [x] Adicionar a foto enviada ao cartão Aparelhos ortodônticos, sem cortes em todas as telas.
