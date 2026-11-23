@@ -4,7 +4,8 @@ export const units = [
 ] as const;
 
 export function whatsappUrl(number: string, treatment?: string) {
-  const message = treatment ? `Olá! Gostaria de agendar uma avaliação para ${treatment} na Clínica Odontológica Bem Estar.` : "Olá! Gostaria de agendar minha avaliação na Clínica Odontológica Bem Estar.";
+  void treatment;
+  const message = "Olá! Vim pelo site e gostaria de agendar uma avaliação na Clínica Odontológica Bem Estar.";
   return `https://wa.me/${number}?text=${encodeURIComponent(message)}`;
 }
 

@@ -16,3 +16,9 @@ describe("Contatos da clínica", () => {
     expect(new URL(mapsUrl(units[1].address)).searchParams.get("query")).toBe("Rua Roque Barbosa, 661 - Bangu, Rio de Janeiro - RJ");
   });
 });
+import { whatsappUrl as wa } from "@/lib/clinic";
+it("WhatsApp links use the site message", () => {
+  const msg = "Olá! Vim pelo site e gostaria de agendar uma avaliação na Clínica Odontológica Bem Estar.";
+  expect(decodeURIComponent(wa("5521991597096").split("text=")[1] ?? "")).toBe(msg);
+  expect(decodeURIComponent(wa("5521973786882", "Clareamento").split("text=")[1] ?? "")).toBe(msg);
+});
