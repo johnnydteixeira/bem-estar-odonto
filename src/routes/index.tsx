@@ -6,15 +6,15 @@ import { Dialog, DialogContent, DialogTitle, DialogDescription } from "@/compone
 import { units, whatsappUrl, mapsUrl } from "@/lib/clinic";
 import { PatientReviews } from "@/components/patient-reviews";
 import { WhatsAppIcon } from "@/components/whatsapp-icon";
-import logo from "@/assets/logo.webp.asset.json";
-import vanessa from "@/assets/vanessa.webp.asset.json";
-import consultorio from "@/assets/consultorio.webp.asset.json";
-import sorriso from "@/assets/sorriso.webp.asset.json";
-import reabilitacao from "@/assets/reabilitacao.webp.asset.json";
-import clareamento from "@/assets/clareamento.webp.asset.json";
-import estetica from "@/assets/estetica.webp.asset.json";
-import facetas from "@/assets/facetas.webp.asset.json";
-import aparelhosOrtodonticos from "@/assets/aparelhos-ortodonticos.jpg.asset.json";
+const logo = { url: "/images/logo.webp" };
+const vanessa = { url: "/images/vanessa.webp" };
+const consultorio = { url: "/images/consultorio.webp" };
+const sorriso = { url: "/images/sorriso.webp" };
+const reabilitacao = { url: "/images/reabilitacao.webp" };
+const clareamento = { url: "/images/clareamento.webp" };
+const estetica = { url: "/images/estetica.webp" };
+const facetas = { url: "/images/facetas.webp" };
+const aparelhosOrtodonticos = { url: "/images/aparelhos-ortodonticos.jpg" };
 
 const instagram = "https://www.instagram.com/clinicaodontobemestar/";
 const treatments = [
