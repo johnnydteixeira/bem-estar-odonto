@@ -108,7 +108,7 @@
 .treatments-section { background: var(--muted); }
 .treatment-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 24px; }
 .treatment-card { overflow: hidden; border: 1px solid var(--border); background: var(--card); border-radius: 8px; }
-.treatment-card > img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: contain; background: var(--secondary); }
+.treatment-card > img, .treatment-card > video { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: contain; background: var(--secondary); }
 .treatment-card .treatment-body { padding: 23px; }
 .treatment-icon { height: 34px; width: 34px; color: var(--primary); margin-bottom: 15px; stroke-width: 1.4; }
 .treatment-card h3 { font-size: 17px; font-weight: 700; }

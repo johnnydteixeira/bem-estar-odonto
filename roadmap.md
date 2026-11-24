@@ -8,3 +8,4 @@
 - [x] Usar a nova foto em Facetas e mostrar as imagens dos tratamentos sem cortes em todas as telas.
 - [x] Auditar todas as imagens, padronizar os arquivos locais e atualizar as importações.
 - [x] Adicionar a foto enviada ao cartão Aparelhos ortodônticos, sem cortes em todas as telas.
+- [x] Trocar a foto do cartão Aparelhos ortodônticos pelo vídeo enviado, visível por inteiro em todas as telas.

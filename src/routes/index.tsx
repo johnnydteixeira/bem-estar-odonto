@@ -14,13 +14,14 @@ const reabilitacao = { url: "/images/reabilitacao.webp" };
 const clareamento = { url: "/images/clareamento.webp" };
 const estetica = { url: "/images/estetica.webp" };
 const facetas = { url: "/images/facetas.webp" };
-const aparelhosOrtodonticos = { url: "/images/aparelhos-ortodonticos.jpg" };
+const aparelhosOrtodonticosVideo = { url: "/videos/colocacao-de-aparelho.mp4" };
+const aparelhosOrtodonticosPoster = { url: "/images/aparelhos-ortodonticos-poster.webp" };
 
 const instagram = "https://www.instagram.com/clinicaodontobemestar/";
 const treatments = [
   { name: "Implantes e próteses dentárias", description: "Cuidado para recuperar a função, o conforto e a confiança no seu sorriso.", image: sorriso.url, icon: Smile },
   { name: "Restaurações e reabilitação oral", description: "Soluções para cuidar dos seus dentes e restabelecer a saúde bucal.", image: reabilitacao.url, icon: ShieldCheck },
-  { name: "Aparelhos ortodônticos", description: "Acompanhamento para o alinhamento dos dentes e o equilíbrio do sorriso.", image: aparelhosOrtodonticos.url, icon: Smile },
+  { name: "Aparelhos ortodônticos", description: "Acompanhamento para o alinhamento dos dentes e o equilíbrio do sorriso.", video: aparelhosOrtodonticosVideo.url, poster: aparelhosOrtodonticosPoster.url, icon: Smile },
   { name: "Clareamento dental", description: "Uma avaliação individualizada para cuidar da estética do seu sorriso.", image: clareamento.url, icon: Sparkles },
   { name: "Facetas e lentes em resina", description: "Atenção aos detalhes, à forma e à harmonia dos seus dentes.", image: facetas.url, icon: Smile },
   { name: "Botox e procedimentos estéticos", description: "Cuidado estético com atenção às suas necessidades e características.", image: estetica.url, icon: Sparkles },
@@ -76,7 +77,7 @@ function Index() {
       </div></section>
       <section className="section treatments-section" id="tratamentos"><div className="container-clinic">
         <div className="section-heading"><div><div className="eyebrow">NOSSOS TRATAMENTOS</div><h2>Cuidado completo para <em>cada sorriso.</em></h2><p>Da prevenção aos cuidados estéticos, encontre o atendimento para a sua necessidade.</p></div><Button variant="outline" size="cta" onClick={() => book()}><WhatsAppIcon /> Agendar uma avaliação <ArrowUpRight /></Button></div>
-        <div className="treatment-grid">{treatments.map(item => <article key={item.name} className="treatment-card">{item.image && <img src={item.image} alt={`Registro clínico fornecido: ${item.name}`} loading="lazy" />}<div className="treatment-body">{!item.image && <item.icon className="treatment-icon" />}<h3>{item.name}</h3><p>{item.description}</p><Button variant="link" onClick={() => book(item.name)}><WhatsAppIcon /> Agendar avaliação <ArrowUpRight /></Button></div></article>)}</div>
+        <div className="treatment-grid">{treatments.map(item => <article key={item.name} className="treatment-card">{item.video ? <video src={item.video} poster={item.poster} autoPlay muted loop playsInline preload="metadata" aria-label={`Vídeo de atendimento real: ${item.name}`} /> : item.image ? <img src={item.image} alt={`Registro clínico fornecido: ${item.name}`} loading="lazy" /> : null}<div className="treatment-body">{!item.image && !item.video && <item.icon className="treatment-icon" />}<h3>{item.name}</h3><p>{item.description}</p><Button variant="link" onClick={() => book(item.name)}><WhatsAppIcon /> Agendar avaliação <ArrowUpRight /></Button></div></article>)}</div>
         <p className="clinical-note">Imagens de atendimentos reais da clínica. Cada tratamento depende de avaliação individual; os resultados variam de pessoa para pessoa.</p>
       </div></section>
       <section className="section doctor-section" id="vanessa"><div className="container-clinic doctor-grid"><img className="doctor-image" src={vanessa.url} alt="Retrato profissional da Dra. Vanessa Macedo" loading="lazy" /><div className="doctor-copy"><div className="eyebrow">QUEM CUIDA DE VOCÊ</div><h2>Dra. Vanessa Macedo</h2><div className="mt-3 text-sm text-primary font-medium">Cirurgiã-dentista • Responsável pela clínica</div><p>À frente da Clínica Odontológica Bem Estar, a Dra. Vanessa Macedo trabalha para oferecer um atendimento odontológico pautado no cuidado, profissionalismo e atenção individualizada a cada paciente.</p><p>Sua dedicação e compromisso com a saúde e o bem-estar dos pacientes fazem parte da essência da clínica.</p><div className="doctor-signature">Dra. Vanessa Macedo</div><Button className="mt-7" variant="hero" size="cta" onClick={() => book()}><WhatsAppIcon /> Agendar minha avaliação <ArrowUpRight /></Button></div></div></section>
