@@ -12,7 +12,7 @@ const consultorio = { url: "/images/consultorio.webp" };
 const sorriso = { url: "/images/sorriso.webp" };
 const reabilitacao = { url: "/images/reabilitacao.webp" };
 const clareamento = { url: "/images/clareamento.webp" };
-const estetica = { url: "/images/estetica.webp" };
+const botox = { url: "/images/botox.webp" };
 const facetas = { url: "/images/facetas.webp" };
 const aparelhosOrtodonticosVideo = { url: "/videos/colocacao-de-aparelho.mp4" };
 const aparelhosOrtodonticosPoster = { url: "/images/aparelhos-ortodonticos-poster.webp" };
@@ -24,7 +24,7 @@ const treatments = [
   { name: "Aparelhos ortodônticos", description: "Acompanhamento para o alinhamento dos dentes e o equilíbrio do sorriso.", video: aparelhosOrtodonticosVideo.url, poster: aparelhosOrtodonticosPoster.url, icon: Smile },
   { name: "Clareamento dental", description: "Uma avaliação individualizada para cuidar da estética do seu sorriso.", image: clareamento.url, icon: Sparkles },
   { name: "Facetas e lentes em resina", description: "Atenção aos detalhes, à forma e à harmonia dos seus dentes.", image: facetas.url, icon: Smile },
-  { name: "Botox e procedimentos estéticos", description: "Cuidado estético com atenção às suas necessidades e características.", image: estetica.url, icon: Sparkles },
+  { name: "Botox e procedimentos estéticos", description: "Cuidado estético com atenção às suas necessidades e características.", image: botox.url, icon: Sparkles },
   { name: "Prevenção e limpeza dental", description: "A saúde do seu sorriso começa com cuidados e acompanhamento regular.", icon: ShieldCheck },
   { name: "Odontopediatria", description: "Um atendimento acolhedor e cuidadoso para o sorriso dos pequenos.", icon: Baby },
   { name: "Extrações e tratamento de canal", description: "Avaliação e cuidado profissional para preservar sua saúde bucal.", icon: Stethoscope },
